@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { userDataList } from './dataList';
-
+import { SpigitComponent } from '/Users/bobglaser/spigit-codetest/src/app/spigit/spigit.component'
 @Component({
-  selector: '-root', 
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
 })
-export class spigitComponent implements OnInit {
- 
- // heroes = HEROES;
- // selectedHero: Hero;
+export class SpigitComponent implements OnInit {
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  };
  
   constructor() { }
  
   ngOnInit() {
   }
  
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
 }

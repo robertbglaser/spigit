@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SpigitComponent } from './spigit/spigit.component';
-
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+ 
+import { SpigitComponent } from './app.component';
+//import { HeroesComponent } from './heroes/heroes.component';
+ 
 @NgModule({
   declarations: [
-    AppComponent,
     SpigitComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [SpigitComponent]
 })
 export class AppModule { }
